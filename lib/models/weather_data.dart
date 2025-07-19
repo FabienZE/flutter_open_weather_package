@@ -3,6 +3,7 @@ import 'package:open_weather_client/models/coordinates.dart';
 import 'package:open_weather_client/models/details.dart';
 import 'package:open_weather_client/models/temperature.dart';
 import 'package:open_weather_client/models/wind.dart';
+import 'package:open_weather_client/models/weather_sys.dart';
 
 part 'weather_data.g.dart';
 

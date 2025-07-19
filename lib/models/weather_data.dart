@@ -32,6 +32,10 @@ class WeatherData {
   @JsonKey(name: 'dt')
   int date;
 
+  /// Holds sunrise and sunset
+  @JsonKey(name: 'sys')
+  WeatherSys sys;
+
   /// Constructor for initializing the WeatherData object
   WeatherData({
     required this.details,
@@ -40,6 +44,7 @@ class WeatherData {
     required this.coordinates,
     required this.name,
     required this.date,
+    required this.sys,
   });
 
   /// Factory method to create a WeatherData object from a JSON map

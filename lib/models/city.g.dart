@@ -7,7 +7,7 @@ part of 'city.dart';
 // **************************************************************************
 
 City _$CityFromJson(Map json) => City(
-      name: json['name'] as String?,
+      name: json['name'] as String,
       sunrise: (json['sunrise'] as num).toInt(),
       sunset: (json['sunset'] as num).toInt(),
       timezone: (json['timezone'] as num).toInt(),

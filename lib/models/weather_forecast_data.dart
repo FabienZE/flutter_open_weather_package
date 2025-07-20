@@ -1,5 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:open_weather_client/open_weather.dart';
+import 'package:open_weather_client/models/city.dart';
+
 
 part 'weather_forecast_data.g.dart';
 
@@ -10,10 +12,13 @@ class WeatherForecastData {
   @JsonKey(name: 'list')
   List<WeatherData> forecastData;
 
+  /// Holds sunrise and sunset and city data
+  City city;
+
   /// Constructor for [WeatherForecastData]
   ///
   /// Takes a required parameter [forecastData] which is a list of [WeatherData] objects.
-  WeatherForecastData({required this.forecastData});
+  WeatherForecastData({required this.forecastData, required this.city });
 
   /// Factory constructor to create an instance of [WeatherForecastData] from a JSON map
   ///

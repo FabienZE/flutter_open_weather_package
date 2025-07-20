@@ -3,7 +3,6 @@ import 'package:open_weather_client/models/coordinates.dart';
 import 'package:open_weather_client/models/details.dart';
 import 'package:open_weather_client/models/temperature.dart';
 import 'package:open_weather_client/models/wind.dart';
-import 'package:open_weather_client/models/city.dart';
 
 part 'weather_data.g.dart';
 
@@ -33,8 +32,6 @@ class WeatherData {
   @JsonKey(name: 'dt')
   int date;
 
-  /// Holds sunrise and sunset and city data
-  City city;
 
   /// Constructor for initializing the WeatherData object
   WeatherData({
@@ -44,7 +41,7 @@ class WeatherData {
     required this.coordinates,
     required this.name,
     required this.date,
-    required this.city,
+ 
   });
 
   /// Factory method to create a WeatherData object from a JSON map
